@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #f9b64d;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #272525;
+}
+
+@media screen and (max-width: 1050px) {
+  .main-container {
+    flex-direction: column;
+  }
+}
+
+/* @media screen and (min-width: 768px) {
+  .main-container {
+    flex-direction: row;
+  }
+} */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background: #f4f4f4;
+  width: 100%;
+}
+
+/* Showcase */
+.showcase {
+  height: 100%;
+  width: 50%;
+  background: var(--primary-color);
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .showcase {
+    width: 100%;
+  }
+}
+
+.showcase h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+}
+
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.showcase form input,
+form select {
+  font-size: 20px;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+form button {
+  font-size: 20px;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+form button:hover {
+  transform: scale(1.1);
+}
+
+/* Image */
+
+.image {
+  width: 50%;
+  margin-top: 2rem;
+}
+
+.image-container {
+  display: flex;
+  object-fit: contain;
+}
+
+img {
+  width: 90%;
+  padding: 2%;
+  /* border: #fff 1px solid;
+  border-radius: 5px; */
+  margin-left: 1%;
+}
+
+.msg {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: #f4f4f4;
+}
