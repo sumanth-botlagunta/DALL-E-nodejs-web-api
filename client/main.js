@@ -19,7 +19,7 @@ const onSubmit = async (e) => {
 
 const getImagefromapi = async (prompt, size) => {
     try{
-        const response = await fetch("http://localhost:4000/openai", {
+        const response = await fetch("https://dallenodeapi.onrender.com/openai", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
