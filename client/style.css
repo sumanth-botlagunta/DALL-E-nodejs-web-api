@@ -106,6 +106,7 @@ form button:hover {
 
 .image-container {
   display: flex;
+  flex-direction: column;
   object-fit: contain;
 }
 
@@ -120,6 +121,5 @@ img {
 .msg {
   font-size: 1.6rem;
   text-align: center;
-  margin-top: 1rem;
   color: #f4f4f4;
 }

@@ -11,7 +11,7 @@ const onSubmit = async (e) => {
     document.querySelector('#image').src = "./assets/loading.gif";
     document.querySelector('#image').style.border = "#fff 1px solid";
     document.querySelector('#image').style.borderRadius = "5px";
-    document.querySelector('.msg').textContent = "";
+    document.querySelector('.msg').textContent = "loading...";
 
     getImagefromapi(promptvalue, sizevalue);
     form.reset();
@@ -33,6 +33,7 @@ const getImagefromapi = async (prompt, size) => {
         if (response.ok) {
             const jsondata = await response.json();
             document.querySelector('#image').src = jsondata.data;
+            document.querySelector('.msg').textContent ="";
         } else {
             document.querySelector('msg').textContent = "Failed to get image";
         }
